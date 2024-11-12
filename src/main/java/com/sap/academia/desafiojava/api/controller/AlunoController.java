@@ -23,12 +23,12 @@ public class AlunoController {
     }
 
     @GetMapping
-    public Page<AlunoInfoDTO> getAllAlunos(Pageable pageable){
+    public Page<AlunoInfoDTO> getAllAlunos(final Pageable pageable){
         return alunoService.getAllAlunos(pageable);
     }
 
     @GetMapping("/{alunoId}/cursos")
-    public Page<CursoInfoDTO> getCursosFromAluno(@PathVariable Long alunoId, Pageable pageable){
+    public Page<CursoInfoDTO> getCursosFromAluno(@PathVariable final Long alunoId, final Pageable pageable){
         return alunoService.getCursosFromAluno(alunoId, pageable);
     }
 }
