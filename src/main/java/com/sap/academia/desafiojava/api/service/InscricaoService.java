@@ -3,7 +3,7 @@ package com.sap.academia.desafiojava.api.service;
 import com.sap.academia.desafiojava.api.aluno.Aluno;
 import com.sap.academia.desafiojava.api.curso.Curso;
 import com.sap.academia.desafiojava.api.inscricao.Inscricao;
-import com.sap.academia.desafiojava.api.inscricao.InscricaoDTO;
+import com.sap.academia.desafiojava.api.inscricao.InscricaoRegistrationRequest;
 import com.sap.academia.desafiojava.api.repository.AlunoRepository;
 import com.sap.academia.desafiojava.api.repository.CursoRepository;
 import com.sap.academia.desafiojava.api.repository.InscricaoRepository;
@@ -23,10 +23,10 @@ public class InscricaoService {
     @Autowired
     private CursoRepository cursoRepository;
 
-    public void inscreverAluno(InscricaoDTO inscricaoDTO) {
-        Aluno aluno = alunoRepository.findById(inscricaoDTO.alunoId())
+    public void inscreverAluno(InscricaoRegistrationRequest inscricaoRegistrationRequest) {
+        Aluno aluno = alunoRepository.findById(inscricaoRegistrationRequest.alunoId())
                 .orElseThrow(() -> new EntityNotFoundException("Aluno não encontrado"));
-        Curso curso = cursoRepository.findById(inscricaoDTO.cursoId())
+        Curso curso = cursoRepository.findById(inscricaoRegistrationRequest.cursoId())
                 .orElseThrow(() -> new EntityNotFoundException("Curso não encontrado"));
 
         Inscricao inscricao = new Inscricao(aluno, curso);
