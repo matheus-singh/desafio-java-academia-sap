@@ -1,5 +1,7 @@
 package com.sap.academia.desafiojava.api.service;
 
+import com.sap.academia.desafiojava.api.DTO.AlunoCreatedDTO;
+import com.sap.academia.desafiojava.api.DTO.CursoCreatedDTO;
 import com.sap.academia.desafiojava.api.repository.entities.Aluno;
 import com.sap.academia.desafiojava.api.DTO.AlunoInfoDTO;
 import com.sap.academia.desafiojava.api.repository.entities.Curso;
@@ -17,5 +19,13 @@ public class InscricaoPopulator {
     // Converte Curso nos DTOs para transferir dados
     public CursoInfoDTO convertCursointoCursoInfoDTO(Curso curso){
         return new CursoInfoDTO(curso.getNome(), curso.getDescricao(), curso.getDataCriacao());
+    }
+
+    public AlunoCreatedDTO convertAlunointoAlunoCreatedDTO(Aluno aluno) {
+        return new AlunoCreatedDTO(aluno.getId(), aluno.getNome(), aluno.getEmail(), aluno.getDataCadastro());
+    }
+
+    public CursoCreatedDTO convertCursointoCursoCreatedDTO(Curso curso) {
+        return new CursoCreatedDTO(curso.getId(), curso.getNome(), curso.getDescricao(), curso.getDataCriacao());
     }
 }

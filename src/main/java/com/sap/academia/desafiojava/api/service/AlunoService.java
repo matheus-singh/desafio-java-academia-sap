@@ -1,5 +1,6 @@
 package com.sap.academia.desafiojava.api.service;
 
+import com.sap.academia.desafiojava.api.DTO.AlunoCreatedDTO;
 import com.sap.academia.desafiojava.api.repository.entities.Aluno;
 import com.sap.academia.desafiojava.api.DTO.AlunoInfoDTO;
 import com.sap.academia.desafiojava.api.controller.requests.AlunoRegistrationRequest;
@@ -24,9 +25,10 @@ public class AlunoService {
     @Autowired
     private InscricaoPopulator inscricaoPopulator;
 
-    public void saveAluno(@Valid AlunoRegistrationRequest alunoRegistrationRequest) {
+    public AlunoCreatedDTO saveAluno(@Valid AlunoRegistrationRequest alunoRegistrationRequest) {
         Aluno aluno = new Aluno(alunoRegistrationRequest);
         alunoRepository.save(aluno);
+        return inscricaoPopulator.convertAlunointoAlunoCreatedDTO(aluno);
     }
 
     public Page<AlunoInfoDTO> getAllAlunos(Pageable pageable) {
