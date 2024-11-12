@@ -1,6 +1,6 @@
 package com.sap.academia.desafiojava.api.controller;
 
-import com.sap.academia.desafiojava.api.inscricao.InscricaoRegistrationRequest;
+import com.sap.academia.desafiojava.api.controller.requests.InscricaoRegistrationRequest;
 import com.sap.academia.desafiojava.api.service.InscricaoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

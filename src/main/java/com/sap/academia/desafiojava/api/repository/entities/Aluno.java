@@ -1,6 +1,6 @@
-package com.sap.academia.desafiojava.api.aluno;
+package com.sap.academia.desafiojava.api.repository.entities;
 
-import com.sap.academia.desafiojava.api.curso.Curso;
+import com.sap.academia.desafiojava.api.controller.requests.AlunoRegistrationRequest;
 import jakarta.persistence.*;
 import lombok.*;
 

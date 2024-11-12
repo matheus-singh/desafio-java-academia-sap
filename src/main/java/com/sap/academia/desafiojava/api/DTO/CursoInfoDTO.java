@@ -1,4 +1,4 @@
-package com.sap.academia.desafiojava.api.curso;
+package com.sap.academia.desafiojava.api.DTO;
 
 import java.time.LocalDate;
 

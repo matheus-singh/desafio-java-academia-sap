@@ -1,9 +1,9 @@
 package com.sap.academia.desafiojava.api.service;
 
-import com.sap.academia.desafiojava.api.aluno.Aluno;
-import com.sap.academia.desafiojava.api.curso.Curso;
-import com.sap.academia.desafiojava.api.inscricao.Inscricao;
-import com.sap.academia.desafiojava.api.inscricao.InscricaoRegistrationRequest;
+import com.sap.academia.desafiojava.api.repository.entities.Aluno;
+import com.sap.academia.desafiojava.api.repository.entities.Curso;
+import com.sap.academia.desafiojava.api.repository.entities.Inscricao;
+import com.sap.academia.desafiojava.api.controller.requests.InscricaoRegistrationRequest;
 import com.sap.academia.desafiojava.api.repository.AlunoRepository;
 import com.sap.academia.desafiojava.api.repository.CursoRepository;
 import com.sap.academia.desafiojava.api.repository.InscricaoRepository;

@@ -1,7 +1,5 @@
-package com.sap.academia.desafiojava.api.inscricao;
+package com.sap.academia.desafiojava.api.repository.entities;
 
-import com.sap.academia.desafiojava.api.aluno.Aluno;
-import com.sap.academia.desafiojava.api.curso.Curso;
 import jakarta.persistence.*;
 import lombok.*;
 

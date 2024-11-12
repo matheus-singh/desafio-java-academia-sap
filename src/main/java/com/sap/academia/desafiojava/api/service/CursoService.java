@@ -1,9 +1,9 @@
 package com.sap.academia.desafiojava.api.service;
 
-import com.sap.academia.desafiojava.api.aluno.AlunoInfoDTO;
-import com.sap.academia.desafiojava.api.curso.Curso;
-import com.sap.academia.desafiojava.api.curso.CursoInfoDTO;
-import com.sap.academia.desafiojava.api.curso.CursoRegistrationRequest;
+import com.sap.academia.desafiojava.api.DTO.AlunoInfoDTO;
+import com.sap.academia.desafiojava.api.repository.entities.Curso;
+import com.sap.academia.desafiojava.api.DTO.CursoInfoDTO;
+import com.sap.academia.desafiojava.api.controller.requests.CursoRegistrationRequest;
 import com.sap.academia.desafiojava.api.repository.CursoRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;

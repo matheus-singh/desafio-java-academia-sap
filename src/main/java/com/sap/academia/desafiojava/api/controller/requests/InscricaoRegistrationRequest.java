@@ -1,4 +1,4 @@
-package com.sap.academia.desafiojava.api.inscricao;
+package com.sap.academia.desafiojava.api.controller.requests;
 
 import jakarta.validation.constraints.NotBlank;
 

@@ -1,8 +1,8 @@
 package com.sap.academia.desafiojava.api.controller;
 
-import com.sap.academia.desafiojava.api.aluno.AlunoInfoDTO;
-import com.sap.academia.desafiojava.api.aluno.AlunoRegistrationRequest;
-import com.sap.academia.desafiojava.api.curso.CursoInfoDTO;
+import com.sap.academia.desafiojava.api.DTO.AlunoInfoDTO;
+import com.sap.academia.desafiojava.api.controller.requests.AlunoRegistrationRequest;
+import com.sap.academia.desafiojava.api.DTO.CursoInfoDTO;
 import com.sap.academia.desafiojava.api.service.AlunoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,9 +1,9 @@
 package com.sap.academia.desafiojava.api.service;
 
-import com.sap.academia.desafiojava.api.aluno.Aluno;
-import com.sap.academia.desafiojava.api.aluno.AlunoInfoDTO;
-import com.sap.academia.desafiojava.api.curso.Curso;
-import com.sap.academia.desafiojava.api.curso.CursoInfoDTO;
+import com.sap.academia.desafiojava.api.repository.entities.Aluno;
+import com.sap.academia.desafiojava.api.DTO.AlunoInfoDTO;
+import com.sap.academia.desafiojava.api.repository.entities.Curso;
+import com.sap.academia.desafiojava.api.DTO.CursoInfoDTO;
 import org.springframework.stereotype.Service;
 
 @Service
