@@ -10,7 +10,7 @@ Este projeto é uma API REST para gerenciamento de alunos e cursos, desenvolvida
 - Clone o repositório:
 
 ```bash
-  git clone https://github.com/matheus-singh/desafio-academia-sap-commerce
+  git clone https://github.com/matheus-singh/desafio-java-academia-sap
 ```
 
  
